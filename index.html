@@ -21,16 +21,6 @@
             return dictionary;
         }
 
-        function updateVars(btn) {
-            var remove = ""; // clear remove if 'Go!'
-            if (btn == 1) { // update remove if 'Update'
-                remove = document.getElementById("remove").value;
-            }
-            var letters = document.getElementById("letters").value;
-            newURL = setGetParameter("letters",letters,window.location.href);
-            window.location.href = setGetParameter("remove",remove,newURL);
-        }
-
         function changeDictionary(dict) {
             if (typeof getUrlVars()["dict"] == 'undefined') {
                 paramVal = "000".split("");
@@ -317,9 +307,6 @@
             <button onclick="updateVars(1);">Update</button>
 
             <div style="margin-top:10px;">
-                <div class="cb"><input type="checkbox" id="dictionary1" name="dictionary" onclick="changeDictionary(0)"> Harry Potter Words</div>
-
-                <div class="cb"><input type="checkbox" id="dictionary2" name="dictionary" onclick="changeDictionary(1)"> English Words (8,000+)</div>
 
                 <div class="cb"><input type="checkbox" id="dictionary3" name="dictionary" onclick="changeDictionary(2)"> English words (100,000+)</div>
             </div>
