@@ -1,4 +1,4 @@
-# How to use Brute-Forcer
+# How to use Anagram Sniper
 ## Step by Step
 1. Click on this [Shiven's Hunter]()
 2. Start Anagrams.
